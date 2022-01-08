@@ -45,13 +45,13 @@ const ResearchCenter = () => {
         <p>
           The Center for Middle Eastern Studies (ORSAM) was established in
           January 2009 to inform the general public and the foreign policy
-          community on the Middle East. ORSAM is a nonpartisan and
-          non-profit research center based in Ankara.
+          community on the Middle East. ORSAM is a nonpartisan and non-profit
+          research center based in Ankara.
         </p>
       </div>
       <div className="social-media">
         {socialMediaBtns.map((btn) => (
-          <Link to={btn.path}>
+          <Link key={btn.label} to={btn.path}>
             <img src={btn.icon} alt={btn.label} />
           </Link>
         ))}

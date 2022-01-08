@@ -10,7 +10,7 @@ const PolicyBrief2 = () => {
       <SectionHeader title="Policiy Brief" />
       <PoliciyBriefContainer className="container">
         {briefs2.map((brief) => (
-          <SingleBrief2 ket={brief.id} {...brief} />
+          <SingleBrief2 key={brief.id} {...brief} />
         ))}
       </PoliciyBriefContainer>
     </Wrapper>

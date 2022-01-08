@@ -1,19 +1,11 @@
 import React from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const SingleMember = ({
-  id,
-  name,
-  position,
-  img,
-  member,
-  setCurrentMember,
-}) => {
-  // console.log(navigation);
+const SingleMember = ({ id, name, position, img }) => {
   return (
-    <Wrapper onClick={() => setCurrentMember(member)}>
-      <Link to={`/teammember/${name}`}>
+    <Wrapper>
+      <Link to={`/teammember/${id}`}>
         <div className="team-box">
           <img src={img} alt={name} />
           <div className="team-box-footer">

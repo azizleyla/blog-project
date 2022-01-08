@@ -2,16 +2,13 @@ import React from "react";
 import ResearchCenter from "../components/ResearchCenter";
 import Footer from "../components/Footer";
 import styled from "styled-components";
-import SectionHeader from "../components/SectionHeader";
-import team1 from "../images/team1.png";
 import RecentPost from "../components/RecentPost";
 import HearFromUs from "../components/HearFromUs";
 import SingleMember from "../components/SingleMember";
 import { teamMembers } from "../utils/contants";
 import TwitterBox from "../components/TwitterBox";
-import { Link } from "react-router-dom";
 
-const Team = ({ currentMember, setCurrentMember }) => {
+const Team = () => {
   return (
     <Wrapper>
       <div className="team-container container">
@@ -19,20 +16,15 @@ const Team = ({ currentMember, setCurrentMember }) => {
           <h1>Our Team</h1>
           <p>
             Definitions of “military doctrine” vary according to schools of
-            military thought, as well as the nature of the national
-            security threats a country faces. The most concise definition
-            of military doctrine can be made as “the set of fundamental
-            principles that guide a country's armed forces in achieving its
-            national security goals”. In other words.
+            military thought, as well as the nature of the national security
+            threats a country faces. The most concise definition of military
+            doctrine can be made as “the set of fundamental principles that
+            guide a country's armed forces in achieving its national security
+            goals”. In other words.
           </p>
           <div className="team-boxes">
             {teamMembers.map((member) => (
-              <SingleMember
-                setCurrentMember={setCurrentMember}
-                member={member}
-                key={member.id}
-                {...member}
-              />
+              <SingleMember key={member.id} {...member} />
             ))}
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import logo from "../images/logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,13 +15,19 @@ const Footer = () => {
           <h3>About Us</h3>
           <ul>
             <li>
-              <a className="bold">Our team</a>
+              <Link to="#" className="bold">
+                Our team
+              </Link>
             </li>
             <li>
-              <a className="bold">Experts</a>
+              <Link to="#" className="bold">
+                Experts
+              </Link>
             </li>
             <li>
-              <a className="bold">Media</a>
+              <Link to="#" className="bold">
+                Media
+              </Link>
             </li>
           </ul>
         </div>
@@ -28,13 +35,13 @@ const Footer = () => {
           <h3>Publications</h3>
           <ul>
             <li>
-              <a>Research</a>
+              <Link to="#">Research</Link>
             </li>
             <li>
-              <a>Commentary</a>
+              <Link to="#">Commentary</Link>
             </li>
             <li>
-              <a>Blog</a>
+              <Link to="#">Blog</Link>
             </li>
           </ul>
         </div>
@@ -42,10 +49,10 @@ const Footer = () => {
           <h3>Activities</h3>
           <ul>
             <li>
-              <a>Lectures</a>
+              <Link to="#">Lectures</Link>
             </li>
             <li>
-              <a>Workshops</a>
+              <Link to="#">Workshops</Link>
             </li>
           </ul>
         </div>
@@ -53,10 +60,14 @@ const Footer = () => {
           <h3>Contact us</h3>
           <ul>
             <li>
-              <a>Phone +994 051 77 88 99</a>
+              <a href="https://www.freecodecamp.org/news/">
+                Phone +994 051 77 88 99
+              </a>
             </li>
             <li>
-              <a>E-mail: info@studies.com</a>
+              <a href="https://www.freecodecamp.org/news/">
+                E-mail: info@studies.com
+              </a>
             </li>
           </ul>
         </div>

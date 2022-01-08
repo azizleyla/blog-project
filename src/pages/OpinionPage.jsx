@@ -73,7 +73,7 @@ function Opinion() {
         <div className="opinions-row">
           <div className="opinions">
             {blogs.map((blog) => (
-              <div className="opinion">
+              <div key={blog.desc} className="opinion">
                 <img src={blog.img} alt="" />
                 <div className="opinion-content">
                   <h3>{blog.title}</h3>

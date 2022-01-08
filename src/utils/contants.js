@@ -64,7 +64,7 @@ export const briefs1 = [
       "Fifteenth of November, Bashar al-Assad issued Legislative Decree No. 28 regarding amendments to the Council of Jurisprudence  Scholars and...",
   },
   {
-    id: 1,
+    id: 2,
     img: brief2,
 
     date: "March 20th 2021",
@@ -73,7 +73,7 @@ export const briefs1 = [
       "On the fifteenth of November, Bashar al-Assad issued Legislative Decree No. 28 regarding amendments to the Council of Jurisprudence Scholars and...",
   },
   {
-    id: 1,
+    id: 3,
     img: brief3,
     date: "November 3rd  2021",
     title:
@@ -95,7 +95,7 @@ export const briefs2 = [
     text: "Fifteenth of November, Bashar al-Assad issued Legislative Decree No. 28 regarding amendments to the Council of Jurisprudence Scholars and...",
   },
   {
-    id: 1,
+    id: 3,
     date: "23",
     text: "The fifteenth of November, Bashar al-Assad issued Legislative Decree No. 28 regarding amendments to the Council of Jurisprudence Scholars and...",
   },
@@ -112,7 +112,7 @@ export const posts = [
       "Definitions of “military doctrine” vary according to schools of military thought, as well as the nature of the national security...",
   },
   {
-    id: 1,
+    id: 2,
     img: brief2,
     title: "Changes in the religious establishment reve a new",
     content:
@@ -152,7 +152,7 @@ export const teamMembers = [
     position: "Research Assistant",
   },
   {
-    id: 4,
+    id: 6,
     img: member6,
     name: "Musab Yılmaz",
     position: "Research Assistant",

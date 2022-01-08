@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { briefs1 } from "../utils/contants";
-import { PolicyBrief1Container } from "./PolicyBrief1";
 import SectionHeader from "./SectionHeader";
 import SingleBrief1 from "./SingleBrief1";
 import TwitterBox from "./TwitterBox";
@@ -19,11 +18,12 @@ const Opinion = () => {
           <div className="opinion-left">
             {briefs1.slice(0, 2).map((brief1) => (
               <SingleBrief1
+                key={brief1.title}
                 title={brief1.title}
                 img={brief1.img}
                 date={brief1.date}
                 description={brief1.description}
-              ></SingleBrief1>
+              />
             ))}
           </div>
         </OpinionContainer>
